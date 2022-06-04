@@ -29,3 +29,19 @@ ALTER TABLE dbo.FluCase ADD NotificationUnit bit NULL;
 -- ejecutar storedprocedure Upd_AgeMLab v1.0.3
 -- ejecutar storedprocedure Upd_AgeGroupLab v1.0.3
 
+
+-- 2021/12/08
+insert into Resources("Culture", "Name", "Value" ) values ('ENG', 'msgCaselistVigTabLabelObservation', 'Observation' );
+insert into Resources("Culture", "Name", "Value" ) values ('SPA', 'msgCaselistVigTabLabelObservation', 'Observación' );
+
+-- Agregar Columna Adding Column FluCase (Carlos)
+ALTER TABLE FluCase ADD
+    SymptomsCharacterize 	NVARCHAR(200) NULL
+GO
+
+-- 2021/12/09
+
+-- 1. actualizar stored procedure sp_table_stat (sp_actualizar_tabla) --> 1.0.2
+
+-- 2. aumentar tmano nombre
+ALTER TABLE Institution ALTER COLUMN FullName nvarchar(250) COLLATE SQL_Latin1_General_CP1_CI_AS NULL;
