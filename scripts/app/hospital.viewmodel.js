@@ -38,6 +38,30 @@ function HospitalViewModel(app, dataModel) {
     var date_ship = new Date();
     var date_close_case = new Date();
     var date_MaxDateSystem = MaxDateSystem;
+
+    self.ErrorMessage = "";
+    self.Id = "";
+    self.UsrCountry = ko.observable(app.Views.Home.UsrCountry()); // Pais del usuario logueado
+    self.hasReset = ko.observable(false);
+    self.CHNum = ko.observable("");
+    self.Salon = ko.observable("");
+    self.SalonVal = ko.observable("");
+    //self.SalonVal.subscribe(function (prueba) {
+    //    alert("valor " + prueba + " ; " + self.SalonVal());
+    //    //console.log(prueba);
+    //});
+
+    function leftpad (str, len, ch) {
+        str = String(str);
+        var i = -1;
+        if (!ch && ch !== 0) ch = ' ';
+        len = len - str.length;
+        while (++i < len) {
+            str = ch + str;
+        }
+        return str;
+    }
+
 	
 };
 
