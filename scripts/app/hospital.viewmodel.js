@@ -23,7 +23,24 @@ function HospitalViewModel(app, dataModel) {
     var LAB_PROPIO_ID = app.Views.Home.LAB_PROPIO_ID();
     var LAB_PRIVADO_ID = app.Views.Home.LAB_PRIVADO_ID();
 
-
+    var date_format_ = app.dataModel.date_format_;
+    var date_format_moment = app.dataModel.date_format_moment;
+    var date_format_ISO = app.dataModel.date_format_ISO;
+    var date_format_DatePicker = app.dataModel.date_format_DatePicker;
+    var date_hospital = new Date();
+    var date_fever = new Date();
+    var date_diagnostic = new Date();
+    var date_hosp_adm = new Date();
+    var date_hosp_disc = new Date();
+    var date_ICU_adm = new Date();
+    var date_ICU_disc = new Date();
+    var date_sample = new Date();
+    var date_ship = new Date();
+    var date_close_case = new Date();
+    var date_MaxDateSystem = MaxDateSystem;
+	
+	
+	
 	
 };
 
