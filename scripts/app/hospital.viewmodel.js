@@ -12,7 +12,16 @@ ko.bindingHandlers.confirmClick = {
 
 
 function HospitalViewModel(app, dataModel) {
+	//console.log("====function HospitalViewModel->START");
+    var self = this;
+    self.POR_ASIGNAR_CONSTANT = "POR ASIGNAR";
 
+    var SAMPLE_TYPE_ANTIGENO = 14;                                      // Tipo de toma de muestra
+    //var TEST_TYPE_ANTIGENO = 4;
+    //var LAB_PROPIO_ID = "999999";
+    //var LAB_PRIVADO_ID = "999998";
+    var LAB_PROPIO_ID = app.Views.Home.LAB_PROPIO_ID();
+    var LAB_PRIVADO_ID = app.Views.Home.LAB_PRIVADO_ID();
 
 
 	
