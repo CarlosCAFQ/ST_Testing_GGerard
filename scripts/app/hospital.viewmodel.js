@@ -39,9 +39,6 @@ function HospitalViewModel(app, dataModel) {
     var date_close_case = new Date();
     var date_MaxDateSystem = MaxDateSystem;
 	
-	
-	
-	
 };
 
 app.addViewModel({
